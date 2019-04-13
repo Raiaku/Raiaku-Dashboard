@@ -8,7 +8,8 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = '6d819c27c08921040d09e98b13ec0a56'
 
-#dummy data for testing
+# dummy data for testing
+# not the dummy
 post = [
     {
         'author': 'Genure Smith',
