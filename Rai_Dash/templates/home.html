@@ -1,0 +1,23 @@
+<!-- This is to pull the html from the layout file -->
+{% extends "layout.html" %}
+
+<!-- this is the content unique to this page -->>
+{% block content %}
+    {% for post in post %}
+        <!-- original code written; below is a more complex and complete way to with css-->
+       <!-- <h1>{{ post.title }}</h1>
+        <p>By {{ post.author }} on {{ post.date_posted }}</p>
+        <p>{{ post.content }}</p> -->
+
+        <article class="media content-section">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <a class="mr-2" href="#">{{ post.author }}</a>
+                    <small class="text-muted">{{ post.date_posted }}</small>
+                </div>
+                <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+                <p class="article-content">{{ post.content }}</p>
+            </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
