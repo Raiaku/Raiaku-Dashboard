@@ -1,6 +1,7 @@
 
 # in the terminal read documentation for debug ability on flask site
-# to run normally `set -x FLASK_APP Rai_Dash.py; flask run`
+# to run normally `set -x FLASK_APP run.py; flask run`
+# `set -x FLASK_ENV development` for setting debug mode
 
 from Rai_Dash import app
 
